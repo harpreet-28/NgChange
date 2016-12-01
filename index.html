@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ng-Change</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+</head>
+
+<body ng-controller="myController as main">
+    <h1>Ng-model and Ng-change Examples</h1>
+    <p>TextBox:
+        <input type="text" ng-change="textBoxChange();" ng-model="textString">
+    </p>
+    <p>CheckBox:
+        <input type="checkbox" ng-model="booleanValue">
+    </p>
+    <p>Date:
+        <input type="date" ng-model="dateValue">
+    </p>
+    <p>Radio:
+        <input type="radio" ng-model="radioValue" value="opt1">Option1
+        <input type="radio" ng-model="radioValue" value="opt2">Option2
+        <input type="radio" ng-model="radioValue" value="opt3">Option3
+    </p>
+    <div>
+        <p>Text input: {{textString}} </p>
+        <p>CheckBox input: {{booleanValue}} </p>
+        <p>Date input: {{dateValue}} </p>
+        <p>Radio input: {{radioValue}} </p>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>
